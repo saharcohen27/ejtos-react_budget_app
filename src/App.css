@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+.currency-container {
+    background-color: #94e59a;
+    color:white;
+}
+
+.dropdown {
+    border-radius: 4px;
+    border:1px solid black;
+    background-color: #94e59a;
+    position: fixed;
+    list-style-type: none;
+    margin:0;
+    padding:8px 0;
+    margin-top: -14px;
+    width:150px;
+}
+
+.dropdown > li {
+    padding: 0 24px;
+}
+
+.dropdown > li:hover {
+    background-color: white;
+}

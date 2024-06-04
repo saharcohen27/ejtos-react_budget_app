@@ -3,9 +3,10 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Budget = () => {
-    const { budget, dispach, remaining } = useContext(AppContext);
+    const { budget, dispatch, remaining, currency } = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
     const handleBudgetChange = (event) => {
+
         if (event.target.value > 20000){
             alert("can not go over 20k")
             return
@@ -14,15 +15,15 @@ const Budget = () => {
             return
         }
         setNewBudget(event.target.value);
-        dispach({
-            type:"SET_BUDGET",
-            payload: event.target.value
+        dispatch({
+            type: 'SET_BUDGET',
+            payload: event.target.value,
         });
 
     }
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £</span>
+            <span>Budget: {currency}</span>
             <input type="number" step="10" max="20000" value={newBudget} onChange={handleBudgetChange}></input>
         </div>
     );
