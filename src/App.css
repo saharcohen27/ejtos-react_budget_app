@@ -61,26 +61,30 @@
 .dropdown > li:hover {
     background-color: white;
 }
-
-.incBtn, .decBtn{
-    font-size:54px;
+  
+.incBtn, .decBtn {
     font-weight: bold;
-    color:white;
-    
-    border-radius: 50%;
     height: 40px;
-    width:40px;
-    
-    
-    border:0;
-    padding:0;
+    width: 40px;
+    font-size: 40px; 
+    /* line-height: 40px; */
+    border-radius: 50%;
+    color: white;
+    border: 0;
+    padding: 0;
 }
+
 .incBtn {
     background-color: green;
 }
-.decBtn{
+
+.decBtn {
     background-color: red;
 }
+
 td {
     vertical-align: middle;
+}
+.sign {
+    margin-top:30px;
 }
