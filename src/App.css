@@ -64,10 +64,9 @@
   
 .incBtn, .decBtn {
     font-weight: bold;
-    height: 40px;
-    width: 40px;
-    font-size: 40px; 
-    /* line-height: 40px; */
+    height: 35px;
+    width: 35px;
+    font-size: 50px; 
     border-radius: 50%;
     color: white;
     border: 0;
@@ -82,9 +81,9 @@
     background-color: red;
 }
 
-td {
-    vertical-align: middle;
-}
 .sign {
-    margin-top:30px;
+    margin-top:-25px;
+}
+td{
+    vertical-align: middle;
 }
